@@ -16,10 +16,21 @@ namespace PowerPrinter
             // Try to parse the input...
             if (int.TryParse(input, out int result))
             {
-                // ...if the parse is successful write all numbers from 2^0 to 2^n
-                for (int i = 0; i <= result; i++)
+                if (result < 0)
                 {
-                    Console.Write("2 ^ {0} = {1}\n", i, Math.Pow(2, i));
+                    // ...if the parse is successful write all numbers from 2^0 to 2^n
+                    for (int i = 0; i >= result; i--)
+                    {
+                        Console.Write("2 ^ {0} = {1}\n", i, Math.Pow(2, i));
+                    }
+                }
+                else
+                {
+                    // ...if the parse is successful write all numbers from 2^0 to 2^n
+                    for (int i = 0; i <= result; i++)
+                    {
+                        Console.Write("2 ^ {0} = {1}\n", i, Math.Pow(2, i));
+                    }
                 }
             }
             else
