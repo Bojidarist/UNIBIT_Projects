@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPrinter", "PowerPrinte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickWorkers", "BrickWorkers\BrickWorkers.csproj", "{D9CD4BEA-8F22-4A1F-9B68-05D32B829DEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenPowerPrinter", "EvenPowerPrinter\EvenPowerPrinter.csproj", "{66554AA7-0AE7-4B2C-9612-7193782E6078}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D9CD4BEA-8F22-4A1F-9B68-05D32B829DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9CD4BEA-8F22-4A1F-9B68-05D32B829DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9CD4BEA-8F22-4A1F-9B68-05D32B829DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66554AA7-0AE7-4B2C-9612-7193782E6078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66554AA7-0AE7-4B2C-9612-7193782E6078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66554AA7-0AE7-4B2C-9612-7193782E6078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66554AA7-0AE7-4B2C-9612-7193782E6078}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
