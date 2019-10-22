@@ -9,7 +9,7 @@ namespace AverageCalculator
     /// </summary>
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             // Ask the user for the amount of numbers
             Console.Write("Number count (n): ");
