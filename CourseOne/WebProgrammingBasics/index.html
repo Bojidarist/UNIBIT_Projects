@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./Css/style.css">
+    <title>Васил Левски</title>
+</head>
+
+<body>
+    <!-- JS Clock -->
+    <form name="Tick" style="float: inline-end; margin: 8px;">
+        <input type="text" size="11" name="Clock" readonly="true" style="background-color: #502f4c; border-radius: 8px; 
+        padding: 8px; text-align: center; border: 0px; 
+        font-size: 16px; color: #f9f4f5;">
+    </form>
+    <script>
+        /*By George Chiang (JK's JavaScript tutorial)
+        http://javascriptkit.com
+        Credit must stay intact for use*/
+        function show() {
+            var Digital = new Date()
+            var hours = Digital.getHours()
+            var minutes = Digital.getMinutes()
+            var seconds = Digital.getSeconds()
+            var dn = "AM"
+            if (hours > 12) {
+                dn = "PM"
+                hours = hours - 12
+            }
+            if (hours == 0)
+                hours = 12
+            if (minutes <= 9)
+                minutes = "0" + minutes
+            if (seconds <= 9)
+                seconds = "0" + seconds
+            document.Tick.Clock.value = hours + ":" + minutes + ":" +
+                seconds + " " + dn
+            setTimeout("show()", 1000)
+        }
+        show()
+    </script>
+
+    <img class="PortraitImage Margin8" src="./Images/VasilLevski.jpeg" />
+    <p class="PortraitText Margin12 TitleText">Васил Левски</p>
+    <div class="LeftBorder PortraitText Margin16 ParagraphText DoubleColumn">
+        <p>Васил Иванов Кунчев, известен като Васил Левски (на стар правопис: Василъ Лъвскій), е български национален
+            герой. Той е идеолог и организатор на българската национална революция, основател на Вътрешната революционна
+            организация (ВРО). Известен е и като Апостола на свободата, заради организирането и разработването на
+            революционна мрежа за освобождаване на България от османско владичество. Пътува по страната и създава частни
+            революционни комитети, които да подготвят обща революция. Неговата мечта е чиста и свята република, в
+            която всички да имат равни права, независимо от своята народност и вероизповедание.</p>
+    </div>
+
+    <hr class="Margin8">
+
+    <div class="PortraitText Margin16 ParagraphText">
+        <table>
+            <tr>
+                <th>
+                    <p class="Margin8">Роден</p>
+                </th>
+                <th>
+                    <p class="Margin8">18 юли г. Карлово, Османска империя</p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <p class="Margin8">Починал</p>
+                </th>
+                <th>
+                    <p class="Margin8">18 февруари 1873 г. (35 г.) София, Османска империя</p>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="PortraitText Margin16 ParagraphText">
+        <a href="https://bg.wikipedia.org/wiki/%D0%92%D0%B0%D1%81%D0%B8%D0%BB_%D0%9B%D0%B5%D0%B2%D1%81%D0%BA%D0%B8">Повече
+            информация...</a>
+    </div>
+
+    <div class="clear"></div>
+    <hr class="Margin8">
+
+    <div class="Margin8">
+        <h1 id="biography-title">Биография(събития)</h1>
+        <br>
+        <ul class="Margin24">
+            <li>Образование и младежки години (1837 – 1862)</li>
+            <li>Революционна дейност в Сърбия и Румъния (1862 – 1868)</li>
+            <li>Създаване на Вътрешна революционна организация (1868 – 1872)</li>
+            <li>Залавяне и смърт (1872 – 1873)</li>
+        </ul>
+    </div>
+</body>
+
+</html>

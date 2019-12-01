@@ -1,0 +1,108 @@
+/* 
+Color Palette
+Black -> #000000
+Purple Taupe -> #502f4c
+Old Lavender -> #70587c
+Lavender Gray -> #c8b8db
+White Smoke -> #f9f4f5
+White -> #ffffff
+Orange -> #fb8c00
+Light Orange -> #ffbd45
+Dark Orange -> #c25e00
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #70587c;
+}
+
+.PortraitImage{
+    float: left;
+}
+
+.PortraitText{
+    float: inline;
+}
+
+.Margin4{
+    margin: 4px;
+}
+
+.Margin8{
+    margin: 8px;
+}
+
+.Margin12{
+    margin: 12px;
+}
+
+.Margin16{
+    margin: 16px;
+}
+
+.Margin20{
+    margin: 20px;
+}
+
+.Margin24{
+    margin: 24px;
+}
+
+.TitleText{
+    font-size: 48px;
+}
+
+.ParagraphText{
+    font-size: 16px;
+    color: #f9f4f5;
+}
+
+.DoubleColumn{
+    columns: 2;
+    column-width: 2px;
+    column-span: none;
+}
+
+table, th, td{
+    border: 1px solid #c8b8db;
+    border-collapse: collapse;
+}
+
+hr{
+    border-color: #502f4c;
+}
+
+a{
+    color: #fb8c00;
+    text-decoration: none;
+}
+a:hover{
+    color: #ffbd45;
+}
+
+#biography-title{
+    color: #c8b8db;
+    text-align: center;
+}
+
+ul{
+    list-style-type: circle;
+    font-size: 24px;
+}
+li{
+    color: #f9f4f5;
+}
+
+.LeftBorder{
+    border-left: 1px solid #c8b8db;
+    padding: 8px;
+}
+
+.clear{
+    clear: both;
+}
+
