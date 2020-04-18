@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="res/musix-icon.png" type="image/png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/33bf359569.js" crossorigin="anonymous"></script>
+    <title>Musix - Listen to anything anywhere</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img id="home-img" src="res/musix-icon.png"></a>
+            <a href="#">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#">Contacts</a>
+        </nav>
+        <h1>Musix</h1>
+        <p>Listen to anything anywhere</p>
+        <section class="store-badge-section">
+            <a href="#"><img class="store-badge" src="res/images/google-play-badge.svg" alt="google-play-badge"></a>
+            <a href="#"><img class="store-badge" src="res/images/app-store-badge.svg" alt="app-store-badge"></a>
+        </section>
+    </header>
+
+    <aside>
+        <p id="info-bubble">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque, ipsum a molestias vero quos.</p>
+        <i onclick="openCloseInfo()" class="fas fa-info-circle"></i>
+    </aside>
+    
+    <main>
+        <!-- Songs -->
+        <section id="trending" class="horizontal-section">
+            <h2>Trending</h2>
+            <ul>
+                <li>
+                    <section id="s1">
+                        <h3>Dystopiaground – Augoeides</h3>
+                        <p>
+                            <a href="#trending">
+                                <i class="far fa-play-circle"></i>
+                            </a>
+                        </p>
+                    </section>
+                </li>
+                <li>
+                    <section id="s2">
+                        <h3>Justin Bieber - Baby ft. Ludacris</h3>
+                        <p>
+                            <a href="#trending">
+                                <i class="far fa-play-circle"></i>
+                            </a>
+                        </p>
+                    </section>
+                </li>
+                <li>
+                    <section id="s3">
+                        <h3>Coda - Fighting Gold</h3>
+                        <p>
+                            <a href="#trending">
+                                <i class="far fa-play-circle"></i>
+                            </a>
+                        </p>
+                    </section>
+                </li>
+            </ul>
+            </section>
+        <section class="horizontal-section">
+            <ul>
+                <li>
+                    <section id="s4">
+                        <h3>Eminem - Lose Yourself</h3>
+                        <p>
+                            <a href="#trending">
+                                <i class="far fa-play-circle"></i>
+                            </a>
+                        </p>
+                    </section>
+                </li>
+                <li>
+                    <section id="s5">
+                        <h3>Backstreet Boys – I Want It That Way</h3>
+                        <p>
+                            <a href="#trending">
+                                <i class="far fa-play-circle"></i>
+                            </a>
+                        </p>
+                    </section>
+                </li>
+                <li>
+                    <section id="s6">
+                        <h3>μ’s - Snow Halation</h3>
+                        <p>
+                            <a href="#trending">
+                                <i class="far fa-play-circle"></i>
+                            </a>
+                        </p>
+                    </section>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews" class="horizontal-section">
+            <h2>Reviews</h2>
+            <ul>
+                <li>
+                    <article>
+                        <img class="avatar-img" src="res/images/snowhalation-song.webp" alt="avatar">
+                        <h3>Boris</h3>
+                        <q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo non provident reprehenderit tenetur laboriosam harum temporibus! Beatae magni ab id accusantium! Quae enim consectetur dolor fugiat, natus dicta at?</q>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img class="avatar-img" src="res/images/baby-song.jpg" alt="avatar">
+                        <h3>Client</h3>
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed itaque rem minus. Vel doloremque ipsam, atque sapiente voluptas deserunt veritatis ea quos similique corrupti modi, fuga nisi facilis, pariatur minus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolores expedita officia eligendi ab nisi voluptatem aut cum, earum repellendus deleniti cupiditate quidem maiores vero commodi. Ullam natus magni esse?</q>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img class="avatar-img" src="res/images/bsb-song.jpg" alt="avatar">
+                        <h3>Veska</h3>
+                        <q>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum veritatis eaque omnis iusto quia eum dolores? Excepturi accusantium unde nam animi nulla enim esse possimus necessitatibus laborum libero, quos tenetur!</q>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="horizontal-section">
+            <h2>Pricing</h2>
+            <ul>
+                <li>
+                    <div class="price-card">
+                        <h3>1 Month</h3>
+                        <h4>$9.99 / month</h4>
+                        <hr>
+                        <ul>
+                            <li>Unlimited Music</li>
+                            <li>No commercials</li>
+                            <li>High Quality Streaming</li>
+                        </ul>
+                        <p><a href="#pricing">Get Started</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="price-card">
+                        <h3>1 Year</h3>
+                        <h4>$4.99 / month</h4>
+                        <hr>
+                        <ul>
+                            <li>Unlimited Music</li>
+                            <li>No commercials</li>
+                            <li>High Quality Streaming</li>
+                        </ul>
+                        <p><a href="#pricing">Get Started</a></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Copyright Musix&copy; 2020-&infin;</p>
+    </footer>
+
+    <script src="js/info.js"></script>
+
+</body>
+</html>

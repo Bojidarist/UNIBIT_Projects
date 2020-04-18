@@ -1,0 +1,329 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: white;
+    outline: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #252525;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    height: 800px;
+    width: 100%;
+    background: linear-gradient(#000000, transparent) ,url("../res/images/landing_page_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home-img{
+    width: 42px;
+    height: 42px;
+    vertical-align: middle;
+}
+
+header nav{
+    padding: 16px;
+}
+
+header h1{
+    font-size: 120px;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+
+header p{
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+
+header nav a{
+    color:white;
+    font-size: larger;
+    margin: 24px;
+}
+
+.store-badge-section{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.store-badge-section img{
+    height: 80px;
+    width: 180px;
+    margin: 16px;
+}
+
+.horizontal-section{
+    width: 100%;
+}
+
+.horizontal-section h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.horizontal-section ul{
+    display: flex;
+    margin: 16px;
+    justify-content: space-evenly;
+}
+
+.song-section h3{
+    color: white;
+}
+
+#s1{
+    background: linear-gradient(black, transparent), url("../res/images/augoeides-song.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+#s1 h3{
+    color:white;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#s1 p{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 0;
+}
+
+#s2{
+    background: linear-gradient(black, transparent), url("../res/images/baby-song.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+#s2 h3{
+    color:white;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#s2 p{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 0;
+}
+
+#s3{
+    background: linear-gradient(black, transparent), url("../res/images/fightinggold-song.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+#s3 h3{
+    color:white;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#s3 p{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 0;
+}
+
+#s4{
+    background: linear-gradient(black, transparent), url("../res/images/loseyourself-song.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+#s4 h3{
+    color:white;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#s4 p{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 0;
+}
+
+#s5{
+    background: linear-gradient(black, transparent), url("../res/images/bsb-song.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+#s5 h3{
+    color:white;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#s5 p{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 0;
+}
+
+#s6{
+    background: linear-gradient(black, transparent), url("../res/images/snowhalation-song.webp");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+#s6 h3{
+    color:white;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#s6 p{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 0;
+}
+
+article{
+    background-color: beige;
+    padding: 24px;
+    width: 300px;
+    border-radius: 16px;
+}
+
+article h3{
+    text-align: center;
+    font-size: larger;
+    margin: 8px;
+}
+
+.avatar-img{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    display: block;
+}
+
+.price-card{
+    background-color: beige;
+    padding: 24px;
+    width: 400px;
+    border-radius: 16px;
+}
+
+.price-card h3{
+    text-align: center;
+    font-size: 24px;
+}
+
+.price-card h4{
+    text-align: center;
+    font-size: 28px;
+    padding: 32px;
+    color: purple;
+}
+
+.price-card hr{
+    color: lightgray;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.price-card ul{
+    display: block;
+    text-align: center;
+}
+
+.price-card li{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.price-card a{
+    border-radius: 24px;
+    padding: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: blueviolet;
+}
+
+.price-card p{
+    padding-top: 32px;
+    text-align: center;
+}
+
+#footer{
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+footer hr{
+    color: lightgray;
+    margin-top: 64px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+aside{
+    position: fixed;
+    color: white;
+    bottom:0;
+    right:0;
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+
+aside i{
+    font-size: 40px;
+    float: right;
+}
+
+#info-bubble{
+    float: left;
+    z-index: 99;
+    display: none;
+    margin-right: 16px;
+    background-color: #353535;
+    border-radius: 12px;
+    padding: 16px;
+}
