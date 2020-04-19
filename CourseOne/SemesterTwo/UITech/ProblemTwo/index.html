@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>**EVEN MORE INTERESTING TITLE**</title>
+</head>
+<body>
+    <input type="number" name="calc" id="calc1">
+    <select name="calc" id="calcSelect">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" name="calc" id="calc2">
+    <input type="button" value="Calculate" name="calc" onclick="calculate()" id="calcBtn">
+    <input type="text" name="calc" id="calcResult" readonly>
+
+    <hr>
+
+    <input type="number" name="comp" id="comp1">
+    <select name="comp" id="compSelect">
+        <option value="<">&lt;</option>
+        <option value=">">&gt;</option>
+        <option value="=">=</option>
+        <option value="<=">&le;</option>
+        <option value=">=">&ge;</option>
+    </select>
+    <input type="number" name="comp" id="comp2">
+    <input type="button" value="Calculate" name="comp" onclick="compare()" id="compBtn">
+    <input type="text" name="comp" id="compResult" readonly>
+
+
+    <script>
+        let calc1 = document.getElementById('calc1');
+        let calcSelect = document.getElementById('calcSelect');
+        let calc2 = document.getElementById('calc2');
+        let calcResult = document.getElementById('calcResult');
+
+        let comp1 = document.getElementById('comp1');
+        let compSelect = document.getElementById('compSelect');
+        let comp2 = document.getElementById('comp2');
+        let compResult = document.getElementById('compResult');
+
+        function doCalculation(a, b, op){
+            if(op == '+'){
+                return a + b;
+            }
+            else if(op == '-'){
+                return a - b;
+            }
+            else if(op == '*'){
+                return a * b;
+            }
+            else if (op == '/'){
+                return a / b;
+            }
+            else if(op == '<'){
+                return a < b;
+            }
+            else if(op == '<='){
+                return a <= b;
+            }
+            else if(op == '>'){
+                return a > b;
+            }
+            else if(op == '>='){
+                return a >= b;
+            }
+            else if(op == '='){
+                return a == b;
+            }
+        }
+
+        function calculate() {
+            let op = calcSelect[calcSelect.options.selectedIndex].value;
+            let n1 = Number(calc1.value);
+            let n2 = Number(calc2.value);
+            calcResult.value = doCalculation(n1, n2, op);
+        }
+
+        function compare() {
+            let op = compSelect[compSelect.options.selectedIndex].value;
+            let n1 = Number(comp1.value);
+            let n2 = Number(comp2.value);
+            compResult.value = doCalculation(n1, n2, op);
+        }
+    </script>
+</body>
+</html>
