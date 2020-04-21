@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>These titles are getting better every time</title>
+
+    <style>
+        p{
+            text-align: center;
+        }
+        nav{
+            text-align: center;
+        }
+        .circle-btn{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin: 8px;
+            border-radius: 80px;
+            background-color: lightgray;
+        }
+        .circle-btn-selected{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin: 8px;
+            border-radius: 80px;
+            background-color: gray;
+        }
+    </style>
+
+</head>
+<body>
+    <p>
+        <img id="currentImg">
+    </p>
+    <nav id="navigation">
+        
+    </nav>
+
+    <script>
+        let nav = document.getElementById('navigation');
+        let img = document.getElementById('currentImg');
+
+        let btnStyle = 'circle-btn';
+        let selectedBtnStyle = 'circle-btn-selected';
+
+        let navButtons = [];
+
+        function createNavButton(picId){
+            let btn = document.createElement('div');
+            btn.id = 'btn' + picId.toString();
+            btn.className = btnStyle;
+            btn.onclick = function (){
+                btn.className = selectedBtnStyle;
+                img.src = picId.toString() + '.jpg';
+                for (let i = 0; i < navButtons.length; i++) {
+                    if(navButtons[i].id != btn.id){
+                        navButtons[i].className = btnStyle;
+                    }
+                }
+            };
+            navButtons.push(btn);
+            nav.appendChild(btn);
+        }
+
+        createNavButton(1);
+        createNavButton(2);
+        createNavButton(3);
+        createNavButton(4);
+        createNavButton(5);
+        navButtons[0].click();
+
+    </script>
+</body>
+</html>
