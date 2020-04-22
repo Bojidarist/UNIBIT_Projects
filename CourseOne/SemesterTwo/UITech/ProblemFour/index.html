@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JoJo's Bizarre Websites</title>
+</head>
+<body>
+    
+    <section class="test-card">
+        <h1>String</h1>
+        <form>
+            <input type="text" id="textInput" placeholder="Text">
+            <input type="text" id="replaceInput" placeholder="Replace">
+            <input type="button" value="Insert Text" onclick="inputText()">
+            <input type="button" value="Replace" onclick="replaceExample()">
+            <input type="button" value="To Upper" onclick="toUpperExample()">
+            <input type="button" value="To Lower" onclick="toLowerExample()">
+        </form>
+        
+        <p id="stringText"></p>
+    </section>
+
+    <section class="test-card">
+        <h1>Arrays</h1>
+        <form>
+            <input type="text" id="arrayInput" placeholder="Value">
+            <input type="button" value="Add" id="addBtn" onclick="addExample()">
+            <input type="button" value="Delete" id="delBtn" onclick="removeExample()">
+            <input type="button" value="Sort" id="sortBtn" onclick="sortExample()">
+        </form>
+        
+        <ul id="itemList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
