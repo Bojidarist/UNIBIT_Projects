@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="res/musix-icon.png" type="image/png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/33bf359569.js" crossorigin="anonymous"></script>
+    <title>Musix - Listen to anything anywhere</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img id="home-img" src="res/musix-icon.png"></a>
+            <a href="#">Home</a>
+            <a href="#trending1">Trending</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#">Contacts</a>
+        </nav>
+        <h1>Musix</h1>
+        <p>Listen to anything anywhere</p>
+        <section class="store-badge-section">
+            <a href="#"><img class="store-badge" src="res/images/google-play-badge.svg" alt="google-play-badge"></a>
+            <a href="#"><img class="store-badge" src="res/images/app-store-badge.svg" alt="app-store-badge"></a>
+        </section>
+    </header>
+
+    <aside>
+        <div id="info-bubble">
+            <h2>Chat</h2>
+            <textarea readonly id="chat-area"></textarea>
+            <input type="text" id="chat-input" placeholder="Message">
+            <ul>
+                <li><button id="chat-send-btn">Send</button></li>
+                <li><button id="chat-del-btn">Delete</button></li>
+                <li><button id="chat-replace-btn">Replace</button></li>
+            </ul>
+        </div>
+        <i onclick="lightOnOff()" id="themeChangeBulb" class="fas fa-lightbulb"></i>
+        <i onclick="openCloseChat()" id="chatButton" class="fas fa-comment"></i>
+    </aside>
+    
+    <main>
+        <!-- Songs -->
+        <section id="trending1" class="horizontal-section">
+            <h2>Trending</h2>
+            <ul></ul>
+        </section>
+        <section id="trending2" class="horizontal-section">
+            <h2></h2>
+            <ul></ul>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews" class="horizontal-section">
+            <h2>Reviews</h2>
+            <ul></ul>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="horizontal-section">
+            <h2>Pricing</h2>
+            <ul>
+                <li>
+                    <div class="price-card">
+                        <h3>1 Month</h3>
+                        <h4>$9.99 / month</h4>
+                        <hr>
+                        <ul>
+                            <li>Unlimited Music</li>
+                            <li>No commercials</li>
+                            <li>High Quality Streaming</li>
+                        </ul>
+                        <p><a href="#pricing">Get Started</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="price-card">
+                        <h3>1 Year</h3>
+                        <h4>$4.99 / month</h4>
+                        <hr>
+                        <ul>
+                            <li>Unlimited Music</li>
+                            <li>No commercials</li>
+                            <li>High Quality Streaming</li>
+                        </ul>
+                        <p><a href="#pricing">Get Started</a></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Copyright Musix&copy; 2020-&infin;</p>
+    </footer>
+
+    <script src="js/chat.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

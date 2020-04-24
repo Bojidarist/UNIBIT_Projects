@@ -1,0 +1,253 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: white;
+    outline: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #252525;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    height: 800px;
+    width: 100%;
+    background: linear-gradient(#000000, transparent) ,url("../res/images/landing_page_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home-img{
+    width: 42px;
+    height: 42px;
+    vertical-align: middle;
+}
+
+header nav{
+    padding: 16px;
+}
+
+header h1{
+    font-size: 120px;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+
+header p{
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+
+header nav a{
+    color:white;
+    font-size: larger;
+    margin: 24px;
+}
+
+.store-badge-section{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.store-badge-section img{
+    height: 80px;
+    width: 180px;
+    margin: 16px;
+}
+
+.horizontal-section{
+    width: 100%;
+}
+
+.horizontal-section h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.horizontal-section ul{
+    display: flex;
+    margin: 16px;
+    justify-content: space-evenly;
+}
+
+.song-section h3{
+    color: white;
+}
+
+article{
+    background-color: beige;
+    padding: 24px;
+    width: 300px;
+    border-radius: 16px;
+}
+
+article h3{
+    text-align: center;
+    font-size: larger;
+    margin: 8px;
+}
+
+.avatar-img{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    display: block;
+}
+
+.price-card{
+    background-color: beige;
+    padding: 24px;
+    width: 400px;
+    border-radius: 16px;
+}
+
+.price-card h3{
+    text-align: center;
+    font-size: 24px;
+}
+
+.price-card h4{
+    text-align: center;
+    font-size: 28px;
+    padding: 32px;
+    color: purple;
+}
+
+.price-card hr{
+    color: lightgray;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.price-card ul{
+    display: block;
+    text-align: center;
+}
+
+.price-card li{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.price-card a{
+    border-radius: 24px;
+    padding: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: blueviolet;
+}
+
+.price-card p{
+    padding-top: 32px;
+    text-align: center;
+}
+
+#footer{
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+footer hr{
+    color: lightgray;
+    margin-top: 64px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+aside{
+    position: fixed;
+    color: white;
+    bottom:0;
+    right:0;
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+
+aside i{
+    font-size: 40px;
+    margin: 16px;
+    float: right;
+    bottom: 0;
+}
+
+#info-bubble{
+    float: none;
+    z-index: 99;
+    display: none;
+    margin-right: 16px;
+    background-color: #353535;
+    border-radius: 12px;
+    padding: 16px;
+    width: 250px;
+    height: 450px;
+}
+
+#info-bubble h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+#info-bubble textarea{
+    margin: 16px;
+    padding: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 65%;
+    width: 200px;
+    background-color: #454545;
+    border-width: 0;
+    color: white;
+    text-align: left;
+    resize: none;
+}
+
+#info-bubble ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#info-bubble li{
+    display: inline;
+}
+
+#info-bubble button{
+    border-radius: 4px;
+    background-color: #454545;
+    color: white;
+    font-size: 14px;
+    border-width: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#chat-input{
+    margin: 16px;
+    padding: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #454545;
+    border-width: 0;
+    color: white;
+}
